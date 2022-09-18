@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Onglets</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .topbar a {
+    text-decoration: none;
+}
+
+.topbar {
+    background-color: #2C3E50;
+    color: #fff;
+
+}
+.topbar-logo {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    padding: 11px 0;
+} 
+
+.topbar-nav {
+    text-align: center;
+    padding-bottom: 16px;
+}
+
+.topbar-nav a {
+    display: inline-block;
+    margin-right: 24px;
+    color: rgba(255, 255, 255, 0.67);
+    transition: color .3s;
+}
+
+.topbar-nav a:hover {
+    color: #FFF;
+}
+    </style>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="topbar-logo"> <em>Ecole supérieure d'informatique salama</em></a>
+      <nav class="topbar-nav">
+          <a href="index.html">Acceuil</a>
+          <a href="esis.html">Actualite</a>
+          <a href="a_propos.html">Apropos</a>
+      </nav>
+  </header>
+    <div class="tabs">
+      <div
+        role="tablist"
+        aria-label="tabs component"
+        class="tabs-btn-container"
+      >
+        <button
+          role="tab"
+          aria-controls="panel-1"
+          id="tab-1"
+          type="button"
+          aria-selected="true"
+          tabindex="0"
+          class="tab active-tab"
+        >
+          Esis jour
+        </button>
+        <button
+          role="tab"
+          aria-controls="panel-2"
+          id="tab-2"
+          type="button"
+          aria-selected="false"
+          tabindex="-1"
+          class="tab"
+        >
+          Esis soir
+        </button>
+        <button
+          role="tab"
+          aria-controls="panel-3"
+          id="tab-3"
+          type="button"
+          aria-selected="false"
+          tabindex="-1"
+          class="tab"
+        >
+          Master
+        </button>
+      </div>
+      <div
+        id="panel-1"
+        role="tabpanel"
+        tabindex="0"
+        aria-labelledby="tab-1"
+        class="tab-content active-tab-content"
+      >
+      <div class="col-2">
+        <a href="horaire.html">Voir l'horaire &#x279c;</a> 
+        </div>
+        <p>
+          <div class="moi">
+            <div><h1>Preparatoire</h1></div>
+          </div>
+          <div class="mos">
+            <div><h1>Premiere Licence</h1></div>
+          </div>
+          <div class="mos">
+            <div><h1>Deuxieme Licence</h1></div>
+          </div>
+          <div class="mos">
+            <div><h1>Troisieme Licence</h1></div>
+          </div>
+          
+        </p>
+      </div>
+
+      <div
+        id="panel-2"
+        role="tabpanel"
+        tabindex="0"
+        aria-labelledby="tab-2"
+        class="tab-content"
+      >
+      <div class="col-2">
+        <a href="horaire.html">Voir l'horaire &#x279c;</a> 
+        </div>
+        <p>
+          
+          <div class="mos">
+            <div><h1>Troisieme licence Licence</h1></div>
+          </div>
+          <div class="mos">
+            <div><h1>Quatrieme licence Licence</h1></div>
+          </div>
+          
+        </p>
+      </div>
+
+      <div
+        id="panel-3"
+        role="tabpanel"
+        tabindex="0"
+        aria-labelledby="tab-3"
+        class="tab-content"
+      >
+      <div class="col-2">
+        <a href="horaire.html">Voir l'horaire &#x279c;</a> 
+        </div>
+        <p>
+          <div class="moi">
+            <div><h1>M1_MIAGE</h1></div>
+          </div>
+          <div class="mos">
+            <div><h1>MA_TLC_AS</h1></div>
+          </div>
+          <div class="mos">
+            <div><h1>M2_MIAGE</h1></div>
+          </div>
+          <div class="mos">
+            <div><h1>M2_RM</h1></div>
+          </div>
+          
+        </p>
+      </div>
+      </div>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

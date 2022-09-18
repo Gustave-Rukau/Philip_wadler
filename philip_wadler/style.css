@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ .all-browsers{
+            
+            padding: 5px;
+            background-color: lightgray;
+        }
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    box-shadow: 0 5px rgba(0, 0, 0, .1);
+    padding: 0px 7px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed;
+    z-index: 1000;
+    background: rgb(106, 135, 197);
+}
+
+header .titre {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0px 0px 0px 10px;
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+.titre img{
+    padding-top: 5px;
+}
+
+header .titre h4 {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+header .navbar ul {
+    list-style: none;
+}
+
+header .navbar ul li {
+    padding-right: 12px;
+    padding-top: 13px;
+    position: relative;
+    float: left;
+}
+
+header .navbar ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 5px;
+    padding: 0px 10px;
+    color: #333;
+    display: block;
+}
+
+header .navbar ul li a:hover {
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+header .navbar ul li ul {
+    position: absolute;
+    left: 0;
+    width: 200px;
+    background: #ffffff;
+    display: none;
+}
+
+header .navbar ul li ul li {
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+header .navbar ul li ul li a {
+    font-size: 15px;
+    padding: 10px 0px 5px 0px;
+}
+
+header .navbar ul li ul li a:hover {
+    color: #747cdf;
+    border-bottom: 2px solid #747cdf;
+}
+
+header .navbar ul li:focus-within>ul,
+header .navbar ul li:hover>ul {
+    display: initial;
+    z-index: 2;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.carousel {
+    z-index: 900;
+    margin-top: 65px;
+}
+
+#menu-bar {
+    display: none;
+}
+
+header label {
+    font-size: 20px;
+    color: #333;
+    cursor: pointer;
+    display: none;
+}
+
+.ico {
+    margin-top: -6px;
+    height: 20px;
+    width: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.blog-card-blog {
+    margin-top: 30px;
+}
+
+.blog-card {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 6px;
+    color: rgba(0, 0, 0, 0.87);
+    background: #fff;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.blog-card .blog-card-image {
+    height: 60%;
+    position: relative;
+    overflow: hidden;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: -30px;
+    border-radius: 6px;
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.blog-card .blog-card-image img {
+    width: 100%;
+    border-radius: 6px;
+    pointer-events: none;
+}
+
+.blog-card .blog-table {
+    padding: 15px 30px;
+}
+
+.blog-table {
+    margin-bottom: 0px;
+}
+
+.blog-category {
+    position: relative;
+    line-height: 0;
+    margin: 15px 0;
+}
+
+.blog-text-success {
+    color: #28a745!important;
+}
+
+.blog-card-blog .blog-card-caption {
+    margin-top: 5px;
+}
+
+.blog-card-caption {
+    font-weight: 700;
+}
+
+.blog-card-caption,
+.blog-card-caption a {
+    color: #333;
+    text-decoration: none;
+}
+
+p {
+    color: #3C4857;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.blog-card .lien_date {
+    margin-top: 15px;
+}
+
+.blog-card .lien_date .actualite {
+    color: #888;
+}
+
+.blog-card .lien_date .actualite .btn-secondary {
+    background: #747cdf;
+    color: #ffffff;
+}
+
+.blog-card .lien_date div {
+    display: inline-block;
+}
+
+.blog-card .actualite .avatar {
+    width: 36px;
+    height: 36px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.blog-card .lien_date .dates_publications {
+    position: relative;
+    top: 1px;
+    font-size: 14px;
+}
+
+.blog-card .lien_date .dates_publications {
+    float: right;
+    line-height: 30px;
+}
+
+h2 {
+    font-weight: 600;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.formulaire_esis {
+    /*
+    font-weight: 600px;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: space-evenly;
+    */
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.formulaire_esis .Inscription {
+    text-decoration: none;
+    max-width: 450px;
+    max-height: auto;
+    padding: 30px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 2px solid #747cdf;
+}
+
+.formulaire_esis .Inscription a {
+    text-decoration: none;
+    color: red;
+}
+
+.formulaire_esis .diplomes {
+    border-radius: 10px;
+    max-width: 450px;
+    max-height: auto;
+    padding: 20px;
+    margin-bottom: 10px;
+    border: 2px solid #747cdf;
+}
+
+.formulaire_esis .diplomes a {
+    text-decoration: none;
+    color: red;
+}
+
+
+.col-xs-12 ul li {
+    list-style: none;
+}
+
+.lien {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+
+.col-xs-12 {
+    margin-top: 10px;
+}
+
+@media(max-width:900px) {
+    header {
+        padding: 20px;
+    }
+    header label {
+        display: initial;
+    }
+    header .navbar {
+        position: relative;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #ffffff;
+        border-top: 1px solid rgba(0, 0, 0, .1);
+        display: none;
+    }
+    header .navbar ul li {
+        width: 100%;
+    }
+    header .navbar ul li ul {
+        position: relative;
+        width: 100%;
+    }
+    header .navbar ul li ul li {
+        background: #eee;
+    }
+    #menu-bar:checked~.navbar {
+        display: initial;
+        z-index: 1000;
+    }
+}
+
+@media(max-width:500px) {
+    .actu {
+        display: flex;
+        flex-direction: column;
+    }
+    .formulaire_esis {
+        display: flex;
+        flex-direction: column;
+    }
+    .formulaire_esis .Inscription {
+        margin-bottom: 20px;
+    }
+}

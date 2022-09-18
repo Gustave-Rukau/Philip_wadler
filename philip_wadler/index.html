@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Esisalama</title>
+    <link rel="icon" href="image/logo_esis.png">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" defer></script>
+
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #faf9f9;
+    font-family: sans-serif;
+}
+
+footer{
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: rgb(106, 135, 197);
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    color: #fff;
+}
+
+
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #cacdd2;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: #fff;
+    border: 1.1px solid white;
+    padding: 5px;
+    border-radius: 50%;
+}
+.socials a i{
+    font-size: 1.1rem;
+    width: 20px;
+    transition: color .4s ease;
+}
+
+.socials a:hover i{
+    color: aqua;
+}
+.footer-menu{
+  margin-bottom: 20px;
+}
+.footer-menu ul{
+  display: flex;
+}
+.footer-menu ul li{
+padding-right: 10px;
+display: block;
+}
+.footer-menu ul li a{
+  color: #cfd2d6;
+  border: 1.3px solid white;
+  padding: 6px 15px;
+  border-radius: 50px;
+  text-decoration: none;
+}
+.footer-menu ul li a:hover{
+  color: #27bcda;
+}
+.footer-bottom{
+    background: rgb(85, 84, 84);
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+.footer-bottom p{
+    color: black;
+    text-align: center;
+    font-size: 18px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom p a{
+  color:#44bae8;
+  font-size: 16px;
+  text-decoration: none;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+@media (max-width:500px) {
+.footer-menu ul{
+  display: inline;
+}
+.footer-menu ul li{
+  margin-bottom: 20px;
+}
+}
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+        <div class="titre">
+            <a href="index.html" class="logo"><img src="image/logo_esis.png" alt=""></a>
+            <h4>E.S.I.S</h4>
+        </div>
+        <input type="checkbox" name="" id="menu-bar">
+        <label for="menu-bar">Menu</label>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <a href="index.html"><img class="ico" src="./icons/maison.png" alt=""> Acceuil</a>
+                </li>
+                <li>
+                    <a href="#"><img class="ico" src="./icons/devoirs.png" alt=""> Education +</a>
+                    <ul>
+                        <li><a href="horair.html">Horaire des cours</a></li>
+                        <li><a href="centre.html">Centre d'excellence</a></li>
+                        <li><a href="biliotheque.html">Bibliotheque</a></li>
+                        <li><a href="publication.html">Publication resultat</a></li>
+                        <li><a href="#">Recours</a></li>
+                        <li><a href="#">E-learning</a></li>
+                        <li><a href="#">Suivi TFC</a></li>
+                        <li><a href="#">Journee Scientifique</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="esis.html"><img class="ico" src="./icons/fil-dactualite.png" alt=""> actualite</a>
+                </li>
+                <li>
+                    <a href="a_propos.html"><img class="ico" src="./icons/a-propos.png" alt=""> A propos d'esis +</a>
+                    <ul>
+                        <li><a href="a_propos.html">Presentation</a></li>
+                        <li><a href="a_propos.html">Cursus</a></li>
+                        <li><a href="a_propos.html">Admission</a></li>
+                        <li><a href="a_propos.html">Nous contacter</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id=" carouselExampleFade " class="carousel slide carousel-fade " data-bs-ride="carousel ">
+        <div class="carousel-inner ">
+            <div class="carousel-item active">
+                <img src="image/A.jpg" class="d-block" alt="" width="100%">
+            </div>
+            <div class="carousel-item">
+                <img src="image/B.png" class="d-block" alt="" width="100%">
+            </div>
+            <div class="carousel-item">
+                <img src="image/C.png" class="d-block" alt="" width="100%">
+            </div>
+            <div class="carousel-item">
+                <img src="image/D.png" alt="" class="d-block"  width="100%">
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true "></span>
+      <span class="visually-hidden ">Previous</span>
+    </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true "></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+
+    <main>
+        <div>
+            <h1>Actualites</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="blog-card blog-card-blog">
+                            <div class="blog-card-image">
+                                <a href="#"> <img class="img" src="./image/esis.png"> </a>
+                                <div class="ripple-cont "></div>
+                            </div>
+                            <div class="blog-table">
+                                <h4 class="blog-card-caption">
+                                    <a href="# ">PROGRAMME DE LA JOURNEE SCIENTIFIQUE</a>
+                                </h4>
+                                <p class="blog-card-description ">08h00 : Arrivée des étudiants <br> 08h45 : Arrivée des invités <br> 09h00 : Hymne national & Hymne ESIS <br> 09h10 : - Présentation du programme (Modérateur)<br> - Mot de bienvenue DG - Mot du représentant du ministre de
+                                    l’ESU - Mot du.....</p>
+                                <div class="lien_date">
+                                    <div class="actualite">
+                                        <a class="btn btn-secondary" href="#">lire la suite</a>
+                                    </div>
+                                    <div class="dates_publications">25/08/2022</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="blog-card blog-card-blog">
+                            <div class="blog-card-image ">
+                                <img class="img " src="./image/2.jpg">
+                                <div class="ripple-cont "></div>
+                            </div>
+                            <div class="blog-table">
+                                <h4 class="blog-card-caption">
+                                    <a href="# ">CONFÉRENCE DE L’UNOPS À ESIS</a>
+                                </h4>
+                                <p class="blog-card-description">Ce mercredi 6 juillet 2022,<br> Esis a reçu une délégation de l’UNOPS, <br> venue tenir une conférence sur les opportunités de stage <br> et d’emploi y offertes. La délégation était conduite <br> par Madame Ndèye Oulimata
+                                    NDIONGUE, du b...</p>
+                                <div class="lien_date ">
+                                    <div class="actualite ">
+                                        <a class="btn btn-secondary " href="# ">lire la suite</a>
+                                    </div>
+                                    <div class="dates_publications ">11/07/2022</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="blog-card blog-card-blog">
+                            <div class="blog-card-image ">
+                                <img class="img" src="./image/construction_esis.jpg">
+                            </div>
+                            <div class="blog-table">
+                                <h6 class="blog-category blog-text-success"></h6>
+                                <h4 class="blog-card-caption">
+                                    <a href="# ">CONSTRUCTION PREMIER NIVEAU BLOC A</a>
+                                </h4>
+                                <p class="blog-card-description ">Les travaux de construction du premier niveau du Bloc A ont démarré cette année. Contrairement à la maquette initiale qui prévoyait <br> la construction de deux niveaux supplémentaires, en dehors du rez de chaussée, un
+                                    seul niveau sera ajouté.</p>
+                                <div class="lien_date">
+                                    <div class="actualite">
+                                        <a class="btn btn-secondary" href="#">lire la suite</a>
+                                    </div>
+                                    <div class="dates_publications">11/07/2022</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+        <div class="all-browsers">
+        <h2>Evénements</h2>
+        <div class="formulaire_esis">
+
+            <div class="Inscription">
+                <h2>Inscription année académique 2022-2023</h2>
+                <p> Les inscriptions pour l’année académique 2022-2023, aux premier et deuxième cycles, ont déjà débuté.</p>
+                <a href="# ">Cliquez pour voir la procédure d'inscription</a>
+            </div>
+            <div class="diplomes">
+                <h2>DIPLOMES ESIS </h2>
+                <a href="# ">Cliquez ici pour télécharger</a> le fichier contenant
+                <p> la liste des noms par année académique et par filière des diplômes récemment reçus. Le droit de retrait se paie à la banque ou à notre comptabilité sur place à ESIS. Pour plus d'informations, s'adresser au bureau de la réception à la bibliothèque.</p>
+            </div>
+        </div>
+    </div>
+    
+    </main>
+
+    <footer>
+
+        <!--The main area of the footer -->
+        <div class="footer-content">
+           <h3>COORDONEES</h4>
+           <p>
+            République Démocratique du Congo (RDC)<br>
+             +(243) 82 226 74 72<br>
+            <a class="lien " href="mailto:info@esisalama.org "><img src="./icons/email.png" alt="" height="4"> info@esisalama.org
+            </a>
+        </p>
+          
+        <!--Footer's social icon-->
+           <ul class="socials">
+              <li><a class="lien " href="https://www.google.com "><img class="ico " src="./icons/google-plus.png " alt=" " height="45"></a></li>
+              <li><a class="lien " href="https://www.facebook.com/EsisOfficiel"><img class="ico " src="./icons/facebook.png " alt=" " height="45"></a></li>
+              <li><a class="lien " href="https://www.youtube.com/channel/UCtDV8isvHNC0fli1FjYB-Xw "><img class="ico " src="./icons/youtube.png " alt=" " height="45"></a></li>
+              <li><a class="lien " href="https://cd.linkedin.com/school/esisalama/ "><img class="ico " src="./icons/linkedin.png " alt=" " height="45"></a></li>
+              
+            </ul>
+        
+         <!-- Footer's menu item-->
+           <div class="footer-menu">
+              <ul class="f-menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Articles</a></li>
+              </ul>
+           </div>
+        
+        </div>
+        
+        <!--Copyright Area-->
+        <div class="footer-bottom">
+            <p>Copyright <a href="esisalama.org">ESISALAMA 2022</a>  </p>
+        </div>
+        
+        </footer>
+</body>
+
+</html>

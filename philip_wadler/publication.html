@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="esis.css">
+    <title>Publication</title>
+</head>
+<body>
+    <header class="topbar">
+        <a class="topbar-logo"> <em>Ecole supérieure d'informatique salama</em></a>
+        <nav class="topbar-nav">
+            <a href="index.html">Acceuil</a>
+        </nav>
+    </header>
+    <section class="mi">
+    <div class="text">
+    <h1><em> Condition de vérification de résultat </em></h1>
+    <p>Seul les étudiants en ordre avec le Paiement ont le plein droit de vérifier leur résultat, d’insérer vos coordonnés rassurez-vous que vos bordereaux se trouve à la comptabilité
+        si oui veillez cliquez sur ouvrir le formulaire.
+    </p>
+</div>
+    <button class="open-button" onclick="openForm()">ouvrir le formulaire</button>
+   <div class="la" id="myForm">
+    <main class="ok">
+        <img src="images/logos.png" alt="Logo">
+
+        <h1>Formulaire de connexion</h1>
+        <form action="#" class="form-container">
+            
+            <input type="text" placeholder="Matricule">
+        
+            <select name="promotion" id="promotion">
+                <optgroup label="Preparatoire">
+                    <option value="1">Prepa</option>
+                </optgroup>
+
+                <optgroup label="Premiere Licence">
+                    <option value="2">L1</option>
+                </optgroup>
+
+                <optgroup label="Deuxieme Graduat">
+                    <option value="3">G2 GL</option>
+                    <option value="4">G2 MSI</option>
+                    <option value="5">G2 DSG</option>
+                    <option value="6">G2 AS</option>
+                    <option value="7">G2 TLC</option>
+                </optgroup>
+
+                <optgroup label="Troisieme Graduat">
+                    <option value="3">G3 GL</option>
+                    <option value="4">G3 MSI</option>
+                    <option value="5">G3 DSG</option>
+                    <option value="6">G3 AS</option>
+                    <option value="7">G3 TLC</option>
+                </optgroup>
+
+            </select>
+            <input type="password" placeholder="Code de securité"> <br>
+            <div >
+            <button type="submit" class="oks">Se connecter</button>
+            <button type="button" class="cancel" onclick="closeForm()">Close</button>
+        </div>
+        </form>
+    </main>
+    <script>
+        function openForm(){
+          document.getElementById("myForm").style.display="block";
+        }
+
+        function closeForm(){
+            document.getElementById("myForm").style.display = "none"
+        }
+    </script>
+</div>
+</section>
+</body>
+</html>
